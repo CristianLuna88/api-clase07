@@ -16,6 +16,7 @@ personaController.getPersonas= getPersonas
   
 const addPersona = async (req,res) =>{
     const{ nombre, apellido,pasaporte }=req.body
+    console.log(nombre)
     try {
         const persona = await Persona.create({
             nombre,
